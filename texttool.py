@@ -14,6 +14,8 @@ def process_line(line):
         return text.lower()
     if cmd == "length":
         return len(text)
+    if cmd == "prefix":
+        return text[:10]
 
     return "Unknown command " + cmd
 
