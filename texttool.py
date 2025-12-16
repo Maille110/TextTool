@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-
-operations = {
-    "reverse": lambda text: text[::-1],
-    "upper": lambda text: text.upper(),
     "count-words": lambda text: len(text.split()),
 
 def process_line(line):
