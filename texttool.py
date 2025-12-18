@@ -35,6 +35,11 @@ def main():
 
         print(process_line(line))
 
+"""
+    Point d'entrée principal du script.
+    Gère l'analyse des arguments de la ligne de commande, lit l'entrée standard
+    et affiche les résultats transformés sur la sortie standard.
+    """
 
 
 if __name__ == "__main__":
