@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+Ce module fournit une suite d'outils en ligne de commande pour la manipulation de texte.
+Il permet d'effectuer des opérations telles que la mise en majuscules, en minuscules,
+le calcul de longueur ou l'ajout de préfixes sur des chaînes de caractères.
+"""
+
+
 def process_line(line):
     if " " not in line:
         return "No command or no argument given"
