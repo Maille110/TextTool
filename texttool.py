@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 def process_line(line):
+    """
+    Traite une ligne de texte, extrait la commande et l'argument, 
+    puis retourne le résultat de l'opération demandée.
+    """
     if " " not in line:
         return "No command or no argument given"
 
@@ -20,7 +24,6 @@ def process_line(line):
 
     return "Unknown command " + cmd
 
-
 def main():
     while True:
         try:
@@ -29,7 +32,6 @@ def main():
             break
 
         print(process_line(line))
-
 
 
 if __name__ == "__main__":
