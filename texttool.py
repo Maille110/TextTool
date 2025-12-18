@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 def process_line(line):
+    """
+    Traite une ligne de texte, extrait la commande et l'argument, 
+    puis retourne le résultat de l'opération demandée.
+    """
     if " " not in line:
         return "No command or no argument given"
 
@@ -15,9 +19,12 @@ def process_line(line):
     if cmd == "prefix":
         return text[:10]
 
+    # >>> AJOUT DE L'UTILISATEUR A (length)
+    if cmd == "length": # L'utilisateur A rajoute une commande length
+        return len(text)
+    # <<<
+
     return "Unknown command " + cmd
-
-
 
 def main():
     while True:
@@ -27,7 +34,6 @@ def main():
             break
 
         print(process_line(line))
-
 
 
 if __name__ == "__main__":
